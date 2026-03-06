@@ -1,0 +1,31 @@
+# ML Learning Environment
+# Minimal - matches production stack
+
+# Core ML
+torch==2.6.0
+torchvision==0.21.0
+
+# Jupyter
+jupyterlab==4.3.4
+
+# Visualization - standard only
+matplotlib==3.10.0
+
+# Data
+numpy==1.26.4
+pandas==2.2.3
+Pillow==11.1.0
+scikit-image==0.24.0
+scipy==1.11.4
+
+# Utilities
+tqdm==4.67.1
+pyyaml==6.0.2
+
+# Medical imaging
+monai==1.4.0
+
+# Phase 4: MLOps
+pathspec==0.12.1
+dvc==3.56.0
+mlflow==2.19.0

@@ -1,0 +1,21 @@
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      # Mount notebooks and code
+      - ./notebooks:/workspace/notebooks
+      - ./data:/workspace/data
+      # Mount parent segmentation folder as read-only reference
+      - ../segmentation:/workspace/segmentation:ro
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+    # For GPU support later, uncomment:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]

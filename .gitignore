@@ -1,0 +1,28 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ML artifacts
+*.pth
+*.pt
+*.onnx
+mlruns/
+
+# DVC (learning artifacts)
+/dvc_*
+*.dvc
+/data/
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Claude
+.claude/
