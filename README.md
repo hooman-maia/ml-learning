@@ -5,7 +5,6 @@ Personal ML learning curriculum — from neural network basics to MLOps and arch
 ## Structure
 
 ```
-learning/
 ├── Dockerfile              # Jupyter environment (PyTorch + MONAI)
 ├── requirements.txt        # Pinned dependencies
 ├── docker-compose.yml      # One-command setup
@@ -21,7 +20,6 @@ learning/
 ## Getting Started
 
 ```bash
-cd learning
 docker compose up
 ```
 
